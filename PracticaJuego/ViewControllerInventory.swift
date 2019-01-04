@@ -53,7 +53,7 @@ class ViewControllerInventory: UIViewController {
         let dinero:Int = (thehero?.dinero)!
         let experiencia:Int = (thehero?.exp)!
         
-        arma.image = thehero?.equipo?.stuff["Arma"]?.imagen
+        arma.image = thehero?.equipo?.stuff["Espada"]?.imagen
         casco.image = thehero?.equipo?.stuff["Casco"]?.imagen
         peto.image = thehero?.equipo?.stuff["Peto"]?.imagen
         botas.image = thehero?.equipo?.stuff["Botas"]?.imagen

@@ -35,11 +35,23 @@ class ViewControllerShop: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         case "Peto":
             thehero?.equipo?.stuff[ "Peto" ] = item
             break;
+        case "Botas":
+            thehero?.equipo?.stuff[ "Botas" ] = item
+            break;
+        case "Espada":
+            thehero?.equipo?.stuff[ "Espada" ] = item
+            break;
+        case "Mano":
+            thehero?.equipo?.stuff[ "Mano" ] = item
+            break;
+        case "Anillo":
+            thehero?.equipo?.stuff[ "Anillo" ] = item
+            break;
         default:
             print("error")
         }
         thehero?.dinero = (thehero?.dinero)! - (item?.precio)!
-        var ddinero:Int = (thehero?.dinero)!
+        let ddinero:Int = (thehero?.dinero)!
         informa.isHidden = false
         informa.text = "Item comprado."
         money.text = String(ddinero)
@@ -62,37 +74,58 @@ class ViewControllerShop: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
         
     }
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 100.0
+    }
+    
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
-        //Creamos nuestra VIEW Contendor
         let myView:UIView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         
-        //Creamos nuestro contenedor de imagen
         let myImageView:UIImageView = UIImageView(frame: CGRect(x: -100, y: 0, width: 100, height: 100))
-        //Creamos nuestra imagen
+
         let imagen:UIImage = listaItems[row].imagen!
-        //Asignamos la imagen al contendor de la vista
+
         myImageView.image = imagen
         
         myView.addSubview(myImageView)
         
-        //Creamos nuestra label
-        let lataque:UILabel = UILabel(frame: CGRect(x: 20, y: 0, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+        let lataque:UILabel = UILabel(frame: CGRect(x: 20, y: -25, width: pickerView.rowSize(forComponent: 0).width, height: 100))
         
-        let ldefensa:UILabel = UILabel(frame: CGRect(x: 20, y: 100, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+        let ldefensa:UILabel = UILabel(frame: CGRect(x: 20, y: -7, width: pickerView.rowSize(forComponent: 0).width, height: 100))
         
-        //Asignamos propiedades a nuestra label
-        lataque.textColor = UIColor.black
-        lataque.font = UIFont(name: "Verdana", size: 26)
-        lataque.text = String(listaItems[row].ataque)
-        //
-        ldefensa.textColor = UIColor.black
-        ldefensa.font = UIFont(name: "Verdana", size: 26)
-        ldefensa.text = String(listaItems[row].defensa)
+        let lmagia:UILabel = UILabel(frame: CGRect(x: 20, y: 10, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+        
+        let lsuerte:UILabel = UILabel(frame: CGRect(x: 20, y: 27, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+        
+        let lprecio:UILabel = UILabel(frame: CGRect(x: 130, y: 0, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+
+        lataque.textColor = UIColor.white
+        lataque.font = UIFont(name: "Verdana", size: 15)
+        lataque.text = "Ataque:" + String(listaItems[row].ataque)
+        
+        ldefensa.textColor = UIColor.white
+        ldefensa.font = UIFont(name: "Verdana", size: 15)
+        ldefensa.text = "Defensa:" + String(listaItems[row].defensa)
+        
+        lmagia.textColor = UIColor.white
+        lmagia.font = UIFont(name: "Verdana", size: 15)
+        lmagia.text = "Magia:" + String(listaItems[row].magia)
+        
+        lsuerte.textColor = UIColor.white
+        lsuerte.font = UIFont(name: "Verdana", size: 15)
+        lsuerte.text = "Suerte:" + String(listaItems[row].suerte)
+        
+        lprecio.textColor = UIColor.white
+        lprecio.font = UIFont(name: "Verdana", size: 15)
+        lprecio.text = "Precio:" + String(listaItems[row].precio)
         
         myView.addSubview(lataque)
         myView.addSubview(ldefensa)
+        myView.addSubview(lmagia)
+        myView.addSubview(lsuerte)
+        myView.addSubview(lprecio)
         
         return myView
         
