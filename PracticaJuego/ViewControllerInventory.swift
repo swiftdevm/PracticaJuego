@@ -88,7 +88,7 @@ class ViewControllerInventory: UIViewController {
             vidas[3].isHidden = false
             break;
         default:
-            print("nada")
+            print("Error vidas.")
         }
         
     }

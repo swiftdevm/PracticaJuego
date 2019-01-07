@@ -8,21 +8,21 @@ class ViewDungeon: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     var monster1 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
     
-    var monster2 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster2 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster2")!)
     
-    var monster3 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster3 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster3")!)
     
-    var monster4 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster4 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster4")!)
     
-    var monster5 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster5 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster5")!)
     
-    var monster6 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster6 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster6")!)
     
-    var monster7 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster7 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster7")!)
     
-    var monster8 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster8 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster8")!)
     
-    var monster9 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
+    var monster9 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster9")!)
     
     @IBOutlet weak var pickerView: UIPickerView!
     
