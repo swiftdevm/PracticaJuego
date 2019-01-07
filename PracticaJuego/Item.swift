@@ -19,7 +19,7 @@ class Item{
     var imagen:UIImage?
     var precio:Int
     
-    init(nombre:String, ataque:Int, defensa:Int, magia:Int, suerte:Int, tipo:String, imagen:UIImage) {
+    init(nombre:String, ataque:Int, defensa:Int, magia:Int, suerte:Int, tipo:String, imagen:UIImage, precio:Int) {
         self.nombre=nombre
         self.ataque=ataque
         self.defensa=defensa
@@ -27,7 +27,7 @@ class Item{
         self.suerte=suerte
         self.tipo=tipo
         self.imagen=imagen
-        self.precio=40
+        self.precio=precio
     }
     
     
