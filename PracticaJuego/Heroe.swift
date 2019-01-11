@@ -12,21 +12,17 @@ import UIKit
 class Heroe {
     var nombre:String
     var dinero:Int
-    var ataque:Int
-    var defensa:Int
-    var magia:Int
-    var suerte:Int
+    var ataque:Int?
+    var defensa:Int?
+    var magia:Int?
+    var suerte:Int?
     var equipo:Stuff?
     var exp:Int
     var imagen:UIImage?
     var vidas:Int
-    
-    init(nombre:String, dinero:Int, ataque:Int, defensa:Int, magia:Int, suerte:Int, exp:Int, vidas:Int, imagen:UIImage,equipo:Stuff) {
+    //ataque:Int, defensa:Int, magia:Int, suerte:Int
+    init(nombre:String, dinero:Int, exp:Int, vidas:Int, imagen:UIImage,equipo:Stuff) {
         self.nombre=nombre
-        self.ataque=ataque
-        self.defensa=defensa
-        self.magia=magia
-        self.suerte=suerte
         self.dinero=dinero
         self.imagen = imagen
         self.exp=exp

@@ -55,6 +55,7 @@ class ViewControllerShop: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         informa.isHidden = false
         informa.text = "Item comprado."
         money.text = String(ddinero)
+        sumaEstadisticas(heroe: thehero!)
             
         } else {
             informa.isHidden = false

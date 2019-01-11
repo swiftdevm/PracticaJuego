@@ -5,7 +5,7 @@ import UIKit
 var monster:Monstruo?
 var listaMonstruos = [Monstruo]()
 class ViewDungeon: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
+    //CREACION DE MONSTRUOS
     var monster1 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster1")!)
     
     var monster2 = Monstruo(nombre: "Monster1", ataque: 10, oro: 20, exp: 10, vida: 3, imagen: UIImage(named: "monster2")!)
